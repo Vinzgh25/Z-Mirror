@@ -1,8 +1,7 @@
 name: Deploy to Heroku
 
-on:
-  push:
-    branches:
+on: workflow_dispatch
+branches:
       - zh_deploy
 
 jobs:
