@@ -125,10 +125,10 @@ async def start(_, message):
     elif config_dict['DM_MODE']:
         start_string = 'Bot Started.\n' \
                        'Now I can send your stuff here.\n' \
-                       'Use me here: @mirrorforfree'
+                       'Use me here: @arxmirror'
     else:
         start_string = 'Sorry, you cant use me here!\n' \
-                       'Join @mirrorforfree to use me.\n' \
+                       'Join @arxmirror to use me.\n' \
                        'Thank You'
     await sendMessage(message, start_string)
 
@@ -156,7 +156,7 @@ async def ping(_, message):
     await editMessage(reply, f'{ping_time} ms')
 
 async def log(_, message):
-    await sendFile(message, 'Z_Logs.txt')
+    await sendFile(message, 'Logs.txt')
 
 help_string = f'''
 <b>NOTE: Click on any CMD to see more detalis.</b>
